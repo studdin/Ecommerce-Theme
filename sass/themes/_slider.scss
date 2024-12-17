@@ -1,0 +1,58 @@
+/* Revolution Slider ---------------------------------------------------------*/
+.elementor-widget-slider_revolution{
+	.next-slider{
+		@media(max-width: 1655px){
+			.tp-leftarrow{
+				@include transform(translate(30px, -25px) !important);
+			}
+			.tp-rightarrow{
+				@include transform(translate(-30px, -25px) !important);
+				right: 0 !important;
+				left: auto !important;
+			}
+		}
+		@media(max-width: $screen-md-max){
+			.tp-bullets{
+				@include transform(translate(-50px, -45px) !important);
+			}
+		}
+		@media(max-width: $screen-xs-max){
+			.tp-bullets{
+				@include transform(translate(-30px, -45px) !important);
+			}
+		}
+		.tparrows{
+			@include opacity-h();
+			@include transition(all .2s ease);
+		}
+		&:hover{
+			.tparrows{
+				@include opacity-s();
+			}
+		}
+	}
+	.next-slider2{
+		@media(max-width: $screen-md-max){
+			.tp-bullets{
+				@include transform(translate(30px, -40px) !important);
+			}
+		}
+	}
+	.next-slider3{
+		@media(max-width: $screen-md-max){
+			.tp-bullets{
+				@include transform(translate(35px, -45px) !important);
+			}
+		}
+	}
+	.button-slider{
+		@media(max-width: $screen-xs-max){
+			padding: 0 45px !important;
+			line-height: 45px !important;
+			font-size:var(--font-size-body,$font-size-body) !important;
+		}
+	}
+}
+
+
+

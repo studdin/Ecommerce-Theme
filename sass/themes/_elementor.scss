@@ -1,0 +1,313 @@
+/*------------------- Content Layout -----------------*/
+.icon-scroll{
+	-webkit-animation: icon-scroll 1s infinite  alternate;
+    animation: icon-scroll 1s infinite  alternate;
+}
+.height-100{
+	height:100%;
+	>div{
+		height:100%;
+	}
+}
+.width-100{
+	.elementor-image{
+		img{
+			width: 100%;
+		}
+	}
+}
+.img-menu{
+	img{
+		@include box-shadow(3px 4px 18px 0px rgba(0, 0, 0, 0.05) !important);
+	}
+}
+.box-shadow{
+	box-shadow: 0px 8px 24px 0px rgba(149, 157, 165, 0.06);
+}
+@media(min-width: $screen-xs-max){
+	.writing-mode{
+		h2{
+			writing-mode: vertical-lr;
+		}
+	}
+}
+@media(min-width: $screen-md-max){
+	.content-padding{
+		@include rtl-padding-left(230px);
+	}
+}
+.btn-shop{
+	a{
+		color: rgba($gray-dark,0.8);
+		&:hover{
+			color: var(--theme-color,$theme-color);
+		}
+	}
+}
+strong.font-bold{
+	font-weight: 800;
+}
+span.font-bold{
+	font-weight: 800;
+}
+.brand-text{
+	a{
+		position: relative;
+		color: rgba($gray-dark,0.9);
+		@include rtl-margin-right(7px);
+		&:after{
+			content: "";
+			position: absolute;
+			display: block;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background: rgba($gray-dark,0.9);
+			@include transform(scaleX(1));
+			transform-origin: 0 50%;
+			transition: transform .48s cubic-bezier(.77,0,.175,1);
+		}
+		&:hover{
+			&:after{
+				transform-origin: 100% 50%;
+				@include transform(scaleX(0));
+				animation: animate-btn-underline .96s .36s forwards cubic-bezier(.77,0,.175,1);
+				background: var(--theme-color,$theme-color);
+			}
+		}
+	}
+	.hots,.new,.sale{
+		background: #d90000;
+		color: $white;
+		padding: 1px 11px;
+		font-weight: 500;
+	}
+	.new{
+		background: #83cddd;
+	}
+	.sale{
+		background: #a8713b;
+	}
+}
+@media(max-width: 1440px){
+	.img-absolute{
+		right: 15px !important;
+	}
+	.img-absolute-2{
+		right: 33px !important;
+	}
+}
+.banner-height{
+	height: 100%;
+	.elementor-widget-container{
+		height: 100%;
+		.bwp-widget-banner {
+			height: 100%;
+			.bg-banner{
+				height: 100%;
+				.banners{
+					height: 100%;
+					.bwp-image{
+						height: 100%;
+						a{
+							height: 100%;
+							img{
+								height: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.style-border,.style-border-2{
+	ul >li{
+		a{
+			position: relative;
+			>span{
+				position: relative;
+				&:after{
+					content: "";
+					position: absolute;
+					display: block;
+					bottom: 2px;
+					left: 0;
+					width: 100%;
+					height: 1px;
+					background: var(--gray-dark, $gray-dark);
+					@include transform(scaleX(1));
+					transform-origin: 0 50%;
+					transition: transform .48s cubic-bezier(.77,0,.175,1);
+				}
+				&:hover{
+					&:after{
+						transform-origin: 100% 50%;
+						@include transform(scaleX(0));
+						background: var(--theme-color, $theme-color);
+						animation: animate-btn-underline .96s .36s forwards cubic-bezier(.77,0,.175,1);
+					}
+				}
+			}
+		}
+	}
+}
+.style-border-2{
+	ul >li{
+		a{
+			position: relative;
+			>span{
+				position: relative;
+				&:after{
+					background: rgba($white,0.8);
+				}
+				&:hover{
+					&:after{
+						background: rgba($white,0.8);
+					}
+				}
+			}
+		}
+	}
+}
+/*------------------- End Content Layout -----------------*/
+
+/*------------------- Style Button -----------------*/
+.btn-style{
+	a{
+		position: relative;
+		>span{
+			position: relative;
+			&:after{
+				content: "";
+				position: absolute;
+				display: block;
+				bottom: 0px;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: var(--theme-color, $theme-color);
+				@include transform(scaleX(1));
+				transform-origin: 0 50%;
+				transition: transform .48s cubic-bezier(.77,0,.175,1);
+			}
+			&:hover{
+				&:after{
+					transform-origin: 100% 50%;
+					@include transform(scaleX(0));
+					animation: animate-btn-underline .96s .36s forwards cubic-bezier(.77,0,.175,1);
+				}
+			}
+		}
+	}
+}
+/*-------------------End Style Button -----------------*/
+
+/*------------------- Content Animation -----------------*/
+.img-animation{
+	img{
+		animation: rotation 15s infinite linear;
+	}
+}
+/*------------------- End Animation -----------------*/
+
+
+/*------------------- Navigation -----------------*/
+.nav-show-hover{
+	.slick-arrow{
+		@include opacity-h();
+	}
+	&:hover{
+		.slick-arrow{
+			@include opacity-s();
+		}
+	}
+}
+.nav-show-always{
+	.slick-arrow{
+		@include opacity-s();
+	}
+}
+/*------------------- End Navigation -----------------*/
+
+/*------------------- Other layout -----------------*/
+.marginright-auto{
+	>.elementor-container{
+		margin-left:0 !important;
+	}
+}
+.marginleft-auto{
+	>.elementor-container{
+		margin-right: 0 !important;
+	}
+}
+@media (min-width:$screen-sm-max){
+	.marginright-sm-auto{
+		>.elementor-container{
+			margin-left:0 !important;
+		}
+	}
+	.marginleft-sm-auto{
+		>.elementor-container{
+			margin-right: 0 !important;
+		}
+	}
+}
+@media (max-width:$screen-sm-max){
+	.marginright-xs-auto{
+		>.elementor-container{
+			margin-left:0 !important;
+		}
+	}
+	.marginleft-xs-auto{
+		>.elementor-container{
+			margin-right: 0 !important;
+		}
+	}
+}
+.elementor-icon-box-title{
+	margin-top:0;
+	strong{
+		font-style: italic;
+		font-weight: 400;
+	}
+}
+.content-container-full{
+	@include rtl-padding-left(calc((100vw - 1760px) / 2));
+	@media (max-width:1770px){
+		@include rtl-padding-left(30px);
+	}
+	@media (max-width:$screen-md-max){
+		@include rtl-padding-left(15px);
+	}
+}
+/*------------------- End layout -----------------*/
+.elementor-section:not(.elementor-section-full_width,.elementor-inner-section){
+	@media (max-width:1770px) and (min-width:$screen-md-max){
+		padding-left: 15px ;
+		padding-right: 15px ;
+	}
+}
+/*------------------- Accordion -----------------*/
+.content-accordion{
+	.elementor-accordion{
+		.elementor-accordion-item{
+			.elementor-tab-title{
+				border-bottom: 1px solid #e8e8e8 !important;
+				&.elementor-active{
+					border-color: var(--gray-dark,$gray-dark) !important;
+				}
+			}
+			.elementor-tab-content{
+				border-bottom: 1px solid #e8e8e8 !important;
+				height: auto !important;
+				padding: 0 !important;
+				&.elementor-active{
+					padding: 30px 0 !important;
+				}
+			}
+		}
+	}
+}
+/*------------------- End Accordion -----------------*/

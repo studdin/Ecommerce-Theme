@@ -1,0 +1,55 @@
+<wpml-config>
+  <custom-types>
+    <custom-type translate="1">ourteam</custom-type>
+    <custom-type translate="1">testimonial</custom-type>
+    <custom-type translate="1">bwp_megamenu</custom-type>
+    <custom-type translate="1">bwp_footer</custom-type>
+    <custom-type translate="1">product</custom-type>
+    <custom-type translate="1">product_variation</custom-type>
+    <custom-type translate="1">shop_order</custom-type>
+    <custom-type translate="1">shop_order_refund</custom-type>
+  </custom-types>
+  <taxonomies>
+    <taxonomy translate="1">product_brand</taxonomy>
+    <taxonomy translate="1">product_type</taxonomy>
+    <taxonomy translate="1">product_visibility</taxonomy>
+    <taxonomy translate="1">product_cat</taxonomy>
+    <taxonomy translate="1">product_tag</taxonomy>
+    <taxonomy translate="1">pa_color</taxonomy>
+    <taxonomy translate="1">pa_size</taxonomy>
+  </taxonomies>
+  <custom-fields>
+    <custom-field action="copy-once">team_facebook</custom-field>
+    <custom-field action="copy-once">team_twitter</custom-field>
+    <custom-field action="copy-once">team_google_plus</custom-field>
+    <custom-field action="copy-once">team_tumblr</custom-field>
+    <custom-field action="copy-once">team_linkedin</custom-field>
+    <custom-field action="copy-once">team_job</custom-field>
+    <custom-field action="copy-once">team_title</custom-field>
+    <custom-field action="copy-once">team_length</custom-field>
+    <custom-field action="copy-once">team_name</custom-field>
+    <custom-field action="copy-once">testimonial_job</custom-field>
+    <custom-field action="copy-once">testimonial_rating</custom-field>
+    <custom-field action="copy-once">page_logo</custom-field>
+    <custom-field action="copy-once">page_header_style</custom-field>
+    <custom-field action="copy-once">page_footer_style</custom-field>
+    <custom-field action="copy-once">show_vertical_menu</custom-field>
+    <custom-field action="copy-once">max_number_1530</custom-field>
+    <custom-field action="copy-once">max_number_1200</custom-field>
+    <custom-field action="copy-once">max_number_991</custom-field>
+    <custom-field action="copy-once">testimonial_star</custom-field>
+    <custom-field action="copy-once">team_youtube</custom-field>
+    <custom-field action="copy-once">view_product</custom-field>
+    <custom-field action="copy-once">testimonial_title</custom-field>
+    <custom-field action="copy-once">_menu_item_menu_item_parent</custom-field>
+    <custom-field action="copy-once">_menu_item_object_id</custom-field>
+  </custom-fields>
+  <shortcodes>
+    <shortcode>
+      <tag>social_link</tag>
+    </shortcode>
+    <shortcode>
+      <tag>social_share</tag>
+    </shortcode>
+  </shortcodes>
+</wpml-config>
